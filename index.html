@@ -11,18 +11,20 @@
     <title>CapCut Pro Mod APK v11.4.0 (No Watermark/Unlocked)</title>
     <style>
         :root {
-            --bg-color: #0f0f12;
-            --card-bg: #1a1a24;
-            --accent-color: #00f2fe;
-            --btn-bg: #38ef7d;
-            --text-color: #ffffff;
-            --text-dim: #a0a0b0;
+            --bg-color: #0b0b0f;
+            --card-bg: #14141d;
+            --card-border: #222230;
+            --accent-cyan: #00f2fe;
+            --accent-purple: #7f00ff;
+            --text-main: #ffffff;
+            --text-dim: #9494a0;
+            --glow-color: rgba(0, 242, 254, 0.2);
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
             background-color: var(--bg-color);
-            color: var(--text-color);
+            color: var(--text-main);
             margin: 0;
             padding: 0;
             display: flex;
@@ -31,36 +33,42 @@
             min-height: 100vh;
         }
 
-        /* Navigation Bar Header */
+        /* Modern Glassmorphism Header */
         header {
             width: 100%;
-            background-color: var(--card-bg);
-            padding: 15px 0;
+            background: rgba(20, 20, 29, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--card-border);
+            padding: 14px 0;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            margin-bottom: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
         }
 
         nav a {
-            color: var(--accent-color);
+            color: var(--text-main);
             text-decoration: none;
             margin: 0 15px;
-            font-weight: bold;
-            font-size: 1rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: var(--accent-cyan);
         }
 
         .container {
-            max-width: 800px;
-            width: 90%;
+            max-width: 750px;
+            width: 92%;
             background: var(--card-bg);
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-            margin-bottom: 30px;
+            border: 1px solid var(--card-border);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            margin: 25px 0;
         }
 
         .app-header {
@@ -71,116 +79,164 @@
         }
 
         .app-icon {
-            width: 80px;
-            height: 80px;
-            background: #000;
-            border-radius: 18px;
+            width: 85px;
+            height: 85px;
+            background: linear-gradient(135deg, #181824, #000000);
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
-            font-size: 24px;
-            color: var(--accent-color);
-            border: 2px solid var(--accent-color);
+            font-weight: 900;
+            font-size: 28px;
+            color: var(--accent-cyan);
+            border: 2px solid rgba(0, 242, 254, 0.4);
+            box-shadow: 0 0 15px var(--glow-color);
         }
 
         .app-title h1 {
             margin: 0;
-            font-size: 1.5rem;
-            color: var(--text-color);
+            font-size: 1.6rem;
+            letter-spacing: -0.5px;
         }
 
         .app-title p {
-            margin: 5px 0 0 0;
+            margin: 6px 0 0 0;
             color: var(--text-dim);
-            font-size: 0.9rem;
+            font-size: 0.88rem;
         }
 
         .badge {
             display: inline-block;
-            background: rgba(0, 242, 254, 0.1);
-            color: var(--accent-color);
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-top: 8px;
-            font-weight: 600;
+            background: linear-gradient(90deg, rgba(0,242,254,0.15), rgba(127,0,255,0.15));
+            color: var(--accent-cyan);
+            border: 1px solid rgba(0,242,254,0.3);
+            padding: 5px 12px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
         }
 
+        /* Premium Glowing Download Button */
         .dl-btn {
             display: block;
             width: 100%;
-            background: linear-gradient(45deg, #00f2fe, #4facfe);
-            color: #000;
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+            color: #0b0b0f;
             text-align: center;
-            padding: 16px 0;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            font-weight: bold;
+            padding: 18px 0;
+            border-radius: 12px;
+            font-size: 1.15rem;
+            font-weight: 800;
             text-decoration: none;
-            box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
-            transition: 0.3s;
+            box-shadow: 0 5px 25px rgba(0, 242, 254, 0.4);
+            transition: all 0.3s ease;
             box-sizing: border-box;
+            margin: 20px 0;
         }
 
         .dl-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 242, 254, 0.5);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 242, 254, 0.7);
         }
 
+        /* Info Table */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        .info-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .info-table td:first-child {
+            color: var(--text-dim);
+            font-weight: 600;
+            width: 40%;
+        }
+
+        .info-table td:last-child {
+            color: var(--text-main);
+            font-weight: 700;
+            text-align: right;
+        }
+
+        /* Features Section */
         .features {
-            margin-top: 30px;
-            border-top: 1px solid #2a2a38;
+            margin-top: 25px;
+            border-top: 1px solid var(--card-border);
             padding-top: 20px;
         }
 
-        .features h2 {
-            font-size: 1.2rem;
-            color: var(--accent-color);
+        .features h2, .seo-section h2 {
+            font-size: 1.15rem;
+            color: var(--accent-cyan);
+            margin-bottom: 12px;
         }
 
         .features ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         .features li {
-            padding: 8px 0;
+            padding: 7px 0;
             color: var(--text-dim);
+            font-size: 0.93rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .features li::before {
-            content: "✓ ";
-            color: var(--accent-color);
+            content: "✔";
+            color: var(--accent-cyan);
             font-weight: bold;
         }
 
-        /* SEO Article Styling Added for Indexing */
-        .seo-article {
+        /* SEO Article & FAQ Section for Google Indexing */
+        .seo-section {
             margin-top: 30px;
-            border-top: 1px solid #2a2a38;
+            border-top: 1px solid var(--card-border);
             padding-top: 20px;
             color: var(--text-dim);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             line-height: 1.6;
         }
 
-        .seo-article h2 {
-            font-size: 1.2rem;
-            color: var(--accent-color);
-            margin-bottom: 10px;
+        .seo-section p {
+            margin-bottom: 12px;
         }
 
-        .seo-article p {
-            margin-bottom: 15px;
+        .faq-box {
+            background: rgba(255,255,255,0.02);
+            border-left: 3px solid var(--accent-cyan);
+            padding: 12px 15px;
+            margin: 10px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .faq-box h4 {
+            margin: 0 0 5px 0;
+            color: var(--text-main);
+            font-size: 0.95rem;
         }
 
         footer {
             margin-top: auto;
-            padding: 20px;
+            padding: 25px;
             text-align: center;
             color: var(--text-dim);
             font-size: 0.85rem;
+            border-top: 1px solid var(--card-border);
+            width: 100%;
+            background: var(--card-bg);
         }
     </style>
 </head>
@@ -189,22 +245,25 @@
     <!-- Upper Navigation Links -->
     <header>
         <nav>
-            <a href="index.html">Home</a> | 
-            <a href="old-versions.html">Old Versions</a> | 
+            <a href="index.html">Home</a> 
+            <a href="old-versions.html">Old Versions</a> 
             <a href="how-to-install.html">How to Install</a>
         </nav>
     </header>
 
-<script>
-  atOptions = {
-    'key' : '4e18181a48c16989c3a48c62d4446b99',
-    'format' : 'iframe',
-    'height' : 60,
-    'width' : 468,
-    'params' : {}
-  };
-</script>
-<script src="https://bellnewyork.org/22/4e18181a48c16989c3a48c62d4446b99"></script>
+    <!-- Adsterra Banner Ad 1 -->
+    <div style="margin: 15px 0; text-align: center;">
+        <script>
+          atOptions = {
+            'key' : '4e18181a48c16989c3a48c62d4446b99',
+            'format' : 'iframe',
+            'height' : 60,
+            'width' : 468,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bellnewyork.org/22/4e18181a48c16989c3a48c62d4446b99"></script>
+    </div>
 
     <div class="container">
         <div class="app-header">
@@ -216,37 +275,75 @@
             </div>
         </div>
 
-        <script>
-          atOptions = {
-            'key' : '7d06ff2cafa91dbf28e579aa411d7f80',
-            'format' : 'iframe',
-            'height' : 250,
-            'width' : 300,
-            'params' : {}
-          };
-        </script>
-        <script src="https://bellnewyork.org/22/7d06ff2cafa91dbf28e579aa411d7f80"></script>
+        <!-- Adsterra Banner Ad 2 -->
+        <div style="margin: 20px 0; text-align: center;">
+            <script>
+              atOptions = {
+                'key' : '7d06ff2cafa91dbf28e579aa411d7f80',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+              };
+            </script>
+            <script src="https://bellnewyork.org/22/7d06ff2cafa91dbf28e579aa411d7f80"></script>
+        </div>
 
-       <a href="https://file.capcutsuper.com.br/cap/CapCut_MOD_APK_Pro_v16.0.01.apk" class="dl-btn">Download CapCut Pro APK</a>
+        <!-- Download Button -->
+        <a href="https://file.capcutsuper.com.br/cap/CapCut_MOD_APK_Pro_v16.0.01.apk" class="dl-btn">Download CapCut Pro APK (150 MB)</a>
 
+        <!-- App Specification Table -->
+        <table class="info-table">
+            <tr>
+                <td>App Name</td>
+                <td>CapCut Pro Mod</td>
+            </tr>
+            <tr>
+                <td>Current Version</td>
+                <td>v11.4.0 (Unlocked)</td>
+            </tr>
+            <tr>
+                <td>File Size</td>
+                <td>~150 MB</td>
+            </tr>
+            <tr>
+                <td>Requires Android</td>
+                <td>5.0 and up</td>
+            </tr>
+            <tr>
+                <td>Category</td>
+                <td>Video Editor</td>
+            </tr>
+        </table>
+
+        <!-- Key Features -->
         <div class="features">
             <h2>Key Features:</h2>
             <ul>
-                <li>No Watermark & Premium Export</li>
+                <li>No Watermark & Premium Export Options</li>
                 <li>All Pro Effects, Transitions & Filters Unlocked</li>
                 <li>Auto Velocity & Speed Curve Supported</li>
                 <li>4K 60FPS High-Quality Exporting</li>
-                <li>100% Safe & Tested for Android</li>
+                <li>100% Safe, Tested & Anti-Ban</li>
             </ul>
         </div>
 
-        <!-- Google Indexing ke liye SEO Article Section -->
-        <div class="seo-article">
+        <!-- SEO Article & FAQ Section (Google Indexing ke liye best) -->
+        <div class="seo-section">
             <h2>About CapCut Pro Mod APK</h2>
-            <p>CapCut is widely recognized as one of the most powerful and user-friendly video editing tools for mobile content creators. Whether you are producing short videos for TikTok, Instagram Reels, or YouTube Shorts, having access to advanced professional tools is essential. However, the official version locks many high-end transitions, filters, and export options behind a paid subscription.</p>
+            <p>CapCut is globally recognized as one of the best mobile video editing applications. With this modified Pro version, users get total access to advanced editing instruments, high-end visual effects, and professional curve adjustments completely free of charges.</p>
             
-            <h2>Why Download the Pro Unlocked Version?</h2>
-            <p>With the modified CapCut Pro APK v11.4.0, users get full access to premium features without paying anything. It completely removes the annoying ending watermark, enables smooth 4K exporting at 60 frames per second, and unlocks advanced chroma key, keyframe animations, and velocity curve editing tools.</p>
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            
+            <div class="faq-box">
+                <h4>Is this mod version safe to install on Android?</h4>
+                <p>Yes, the package is scanned and tested for security to ensure smooth working without device risks.</p>
+            </div>
+
+            <div class="faq-box">
+                <h4>Does it remove the default ending watermark?</h4>
+                <p>Absolutely! The exported videos will be completely clean without any CapCut branding watermark.</p>
+            </div>
         </div>
     </div>
 
